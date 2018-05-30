@@ -1,0 +1,7 @@
+<div>
+    <div class="mark" ng-class="{'mar-show':show}"></div>
+    <div class="drawer" ng-class="{'dra-show':show}">
+        <h3>表单<span ng-click="showFun()">X</span></h3>
+        <input type="text" ng-model="age" ng-click="$event.stopPropagation()">
+    </div>
+</div>

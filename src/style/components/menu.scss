@@ -1,0 +1,30 @@
+.app-menu{
+  h3{
+    height:30px;
+    line-height:30px;
+    padding:0 20px;
+    background:#b6b6b6;
+  }
+  li{
+    p{
+      border-bottom:1px solid #dddddd;
+      height:30px;
+      line-height:30px;
+      padding:0 20px;
+    }
+    li{
+
+      p{
+        padding: 0 35px;
+      }
+      li{
+        height:30px;
+        line-height:30px;
+        padding: 0 50px;
+        border-bottom:1px solid #dddddd;
+
+      }
+    }
+
+  }
+}

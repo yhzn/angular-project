@@ -1,0 +1,32 @@
+<div class="shop1" ng-init="init()">
+    <div app-head></div>
+    <div class="shop ctr">
+        <div class="ctr-left">
+        </div>
+        <div class="ctr-right">
+            <div app-nav></div>
+            <button ng-click="go()">返回主页</button>
+            <a ng-href="#/home">a go home</a>
+            <div class="form">
+                <h3>表单验证</h3>
+                <ul>
+                    <li><span ng-bind="v.ownerUser.tips"></span></li>
+                    <li><input type="text" name="user" placeholder="输入用户名"></li>
+                    <li><span ng-bind="v.ownerMobile.tips"></span></li>
+                    <li><input type="text" name="mobile" placeholder="手机号"></li>
+                    <li><span ng-bind="v.ownerRmb.tips"></span></li>
+                    <li><input type="text" name="rmb" placeholder="数字格式人民币"></li>
+                    <li><span ng-bind="v.ownerCardId.tips"></span></li>
+                    <li><input type="text" name="cardId" placeholder="输入身份证号"></li>
+                    <li><span ng-bind="v.ownerNum.tips"></span></li>
+                    <li><input type="text" name="number" placeholder="输入某一范围的数字"></li>
+                    <li><span ng-bind="v.ownerCard.tips"></span></li>
+                    <li><input type="text" name="card" placeholder="输入证件号"></li>
+                </ul>
+                <div class="ss">
+                    <a href="javescript:;" ng-click="post()">提交</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

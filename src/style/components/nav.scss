@@ -1,0 +1,33 @@
+ul.nav{
+  height:25px;
+  border:1px solid #dddddd;
+  padding-top:3px;
+
+  li{
+    float:left;
+    height:24px;
+    line-height:24px;
+    padding:0 20px;
+    margin-right:3px;
+    border:1px solid #dddddd;
+    border-bottom:none;
+    border-radius: 4px 4px 0px 0px;
+    background:#ffffff;
+    &:hover{
+      margin-top:1px;
+      color:green;
+      background:yellow;
+    }
+    &.active{
+      margin-top:1px;
+      color:green;
+      background:yellow;
+
+    }
+    span{
+      margin-left:15px;
+      cursor: pointer;
+    }
+
+  }
+}

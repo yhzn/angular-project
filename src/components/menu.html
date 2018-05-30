@@ -1,0 +1,21 @@
+<div class="app-menu">
+<div ng-click="menu()">
+    <h3>菜单系统</h3>
+    <ul>
+        <li ng-repeat="(firstIndex, firstOrder) in menuData">
+           <p ng-bind="firstOrder.text" class="bg-blue bg-blue-hover" ng-class="{ 'bg-blue-active': firstOrder.isFolder}"  ng-click="isFolder(firstIndex,menuData)"></p>
+            <ul ng-show="firstOrder.isFolder">
+                <li ng-repeat="(secondIndex, secondOrder) in firstOrder.children">
+                    <p ng-bind="secondOrder.text" class="bg-green bg-green-hover" ng-class="{ 'bg-green-active': secondOrder.isFolder}" ng-click="isFolder(secondIndex,firstOrder.children)"></p>
+                    <ul ng-show="secondOrder.isFolder">
+                        <a ng-repeat="(thirdIndex, thirdOrder) in secondOrder.children" ng-href="#/{{thirdOrder.href}}">
+                            <li ng-bind="thirdOrder.text" class="bg-yellow bg-yellow-hover" ng-class="{'bg-yellow-active':thirdOrder.isFolder}" ng-click="isFolder(thirdIndex,secondOrder.children,thirdOrder.text,thirdOrder.href)">
+                            </li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</div>

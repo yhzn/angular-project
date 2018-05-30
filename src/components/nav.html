@@ -1,0 +1,8 @@
+
+    <ul class="nav clear">
+        <li ng-click="routers('home')" ui-sref="home" ui-sref-active="active">首页</li>
+        <li ng-repeat="(index, nav) in navData" ng-click="routers(nav.href)" ui-sref="{{nav.href}}" ui-sref-active="active">
+            {{nav.text}}
+            <span ng-click="close(index)">X</span>
+        </li>
+    </ul>

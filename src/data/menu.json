@@ -1,0 +1,103 @@
+[{
+  "text":"户外玩具",
+  "code":0,
+  "isFolder":true,
+  "children":[
+    {
+      "text":"平衡木",
+      "code":11,
+      "active":true,
+      "isFolder":true,
+      "children":[
+        {
+          "href":"shop",
+          "isFolder":true,
+          "text":"红双喜"
+        },{
+          "href":"A",
+          "isFolder":false,
+          "text":"宝石蓝"
+        }
+      ]
+    },{
+      "text":"跷跷板",
+      "code":22,
+      "active":false,
+      "isFolder":false,
+      "children":[
+        {
+          "href":"S",
+
+          "isFolder":false,
+          "text":"少儿版"
+        },{
+          "href":"D",
+
+          "isFolder":false,
+          "text":"青年版"
+        }
+      ]
+    }
+  ]
+},{
+  "text":"室内玩具",
+  "code":1,
+  "isFolder":false,
+  "children":[
+    {
+      "text":"桌球",
+      "code":21,
+      "active":true,
+      "isFolder":false,
+      "children":[
+        {
+          "href":"F",
+
+          "isFolder":false,
+          "text":"台球"
+        },{
+          "href":"G",
+
+          "isFolder":false,
+          "text":"乒乓球"
+        }
+      ]
+    },{
+      "text":"碰碰车",
+      "code":22,
+      "active":true,
+      "isFolder":false,
+      "children":[
+        {
+          "href":"H",
+          "isFolder":false,
+          "text":"单人型"
+        },{
+          "href":"J",
+
+          "isFolder":false,
+          "text":"双人型"
+        }
+      ]
+    }
+  ]
+},{
+  "text":"水上玩具",
+  "code":2,
+  "isFolder":false,
+  "children":[
+    {
+      "text":"游艇",
+      "code":31,
+      "active":true,
+      "isFolder":false,
+      "children":[]
+    },{
+      "text":"帆船",
+      "code":32,
+      "active":false,
+      "isFolder":false,
+      "children":[]
+    }
+  ]
+}]

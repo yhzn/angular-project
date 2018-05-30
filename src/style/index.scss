@@ -1,0 +1,29 @@
+@import "../../vendor/reset/reset";
+@import "../../vendor/yhui/yhui";
+@import "views/home";
+@import "views/shop";
+@import "views/shop1";
+@import "components/foot";
+@import "components/head";
+@import "components/menu";
+@import "components/nav";
+
+.ctr{
+  height:calc(100vh - 120px);
+  border:1px solid #dddddd;
+  box-sizing: border-box;
+  overflow:hidden;
+  .ctr-left{
+    float:left;
+    width:200px;
+    height:100%;
+    border-right:1px solid #dddddd;
+    overflow:auto;
+  }
+  .ctr-right{
+    margin-left:202px;
+    height:100%;
+    border-left:1px solid #dddddd;
+    overflow: auto;
+  }
+}

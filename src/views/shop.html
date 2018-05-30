@@ -1,0 +1,30 @@
+<div class="shop" ng-init="init()">
+    <div app-drawer show="show"></div>
+    <div app-pop show="popShow"></div>
+    <div app-head></div>
+    <div class="shop ctr">
+        <div class="ctr-left">
+            <div app-menu></div>
+        </div>
+        <div class="ctr-right">
+            <div app-nav></div>
+            <button ng-click="go()">返回主页</button>
+            <a ng-href="#/home">a go home</a>
+            <div>{{dataCom}}</div>
+            <div app-form data="list" age="age" change-my-age="changeAge()" name="{{name}}"></div>
+            <div app-form1></div>
+            <br/>
+            <div>--------------数据双向绑定------------------------</div>
+            <br/>
+            <div><input type="text" ng-model="age"></div>
+            <br/>
+            <div>--------------数据单向绑定-------------------------</div>
+            <br/>
+            <input type="text" ng-model="name">
+            <button ng-click="showFun()">抽屉</button>
+            <button ng-click="popShowFun()">弹窗</button>
+        </div>
+    </div>
+    <div app-foot></div>
+
+</div>

@@ -1,0 +1,124 @@
+.bg-blue{
+    background: #0059ff;
+}
+.bg-green{
+    background:green;
+}
+.bg-yellow{
+    background:yellow;
+}
+.bg-blue-hover:hover{
+    background: #2c7dff;
+}
+.bg-green-hover:hover{
+    background: #61801c;
+}
+.bg-yellow-hover:hover{
+    background: #ffdb19;
+}
+.bg-blue-active{
+    background: #2c7dff;
+}
+.bg-green-active{
+    background: #61801c;
+}
+.bg-yellow-active{
+    background: #ffdb19;
+}
+.clear:after{
+    content: '.';
+    height:0;
+    clear:both;
+    visibility:hidden;
+    display: block;
+    overflow:hidden;
+
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.pagination>li {
+    display: inline;
+}
+
+.pagination>.active>a, .pagination>.active>span, .pagination>.active>a:hover, .pagination>.active>span:hover, .pagination>.active>a:focus, .pagination>.active>span:focus {
+    z-index: 2;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #428bca;
+    cursor: default;
+}
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.42857143;
+    text-decoration: none;
+    color: #428bca;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+}
+
+/*-------------抽屉---------------------*/
+
+.drawer{
+
+    border:1px solid #dddddd;
+    box-sizing:border-box;
+    position: absolute;
+    z-index:30;
+    top:0;
+    right:0;
+    background:#ffffff;
+    width:600px;
+    height:100vh;
+    overflow: auto;
+    transition:ease-out 0.2s;
+
+}
+
+.dra-show{
+    right:-600px;
+
+}
+
+
+/*------------------弹窗----------------*/
+.pop{
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    background:#ffffff;
+    position: absolute;
+    z-index:30;
+    top:50%;
+    left:50%;
+    overflow: hidden;
+    width: calc(100vw - 260px);
+    height: calc(100vh - 120px);
+    transform: translate(-50%,-50%);
+    transition:height 0.3s;
+}
+.pop-show{
+    height:0;
+    border:none;
+}
+.mark{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:30;
+    width:100vw;
+    height:100vh;
+    background:rgba(115,115,115,0.6);
+}
+.mar-show{
+    display: none;
+
+}
